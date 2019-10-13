@@ -32,21 +32,6 @@ bot.on('message', async meg => {
 
 
 bot.on('message', async meg => {
-  if (!meg.content.startsWith('ne.test')) return;
-  // console.log('member: ', meg.member);
-  // meg.channel.send(meg.member.hasPermission('MANAGE_MESSAGES'));
-  // console.log(meg.author.avatarURL);
-  // meg.channel.send(`${meg.author.createdAt}`);
-
-  // let day = (Date.parse(Date()) - Date.parse(meg.author.createdAt)) / (1000 * 60 * 60 * 24);
-  // day = Math.round(day);
-  // console.log(day);
-
-  console.log(bot.guilds.find(g => g.name === 'Test2').members);
-
-});
-
-bot.on('message', async meg => {
 
   if (meg.author.bot) return;
 
