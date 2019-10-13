@@ -1,4 +1,4 @@
-let bws =  ['vl', 'vcl', 'wtf', 'dm', 'đm', 'cmm', 'fuck', 'diss', 'cc', 'lồn', 'buồi', 'cặc'];
+let bws =  ['vl', 'vcl', 'wtf', 'dm', 'đm', 'cmm', 'cmn', 'fuck', 'diss', 'cc', 'lồn', 'buồi', 'cặc'];
 
 module.exports = {
   flag: (meg) => {
