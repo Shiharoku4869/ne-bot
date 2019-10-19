@@ -7,8 +7,9 @@ module.exports = {
   },
 
   check: s => {
+    s = s.toLowerCase();
     for (let w of bws) {
-      if (s.toLowerCase().includes(w))
+      if (s.includes(w) || s.endsWith('lồn'))
         return true;
     }
     return false;
