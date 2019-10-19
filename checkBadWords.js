@@ -9,7 +9,7 @@ module.exports = {
 
     let lg = {};
     try {
-      lg = require('../mod-logs.json');
+      lg = require('./mod-logs.json');
     } catch {
 
     }
@@ -24,7 +24,7 @@ module.exports = {
       meg.member.removeRole(rMem.id, 'chử bậy nhiều');
       meg.guild.channels.find(c => c.name === 'mod-logs').send(`Thành viên ${meg.author} bị xóa role ${rMem.name} do chử bậy nhiều`);
     }
-    fs.writeFileSync('../mod-logs.json', JSON.stringify(lg, null, 2));
+    fs.writeFileSync('./mod-logs.json', JSON.stringify(lg, null, 2));
   },
 
   check: s => {
