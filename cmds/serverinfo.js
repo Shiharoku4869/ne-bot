@@ -21,7 +21,7 @@ module.exports = {
         fields: [
           {
             name: 'Tạo server lúc: ',
-            value: serverCreated.join(', ')
+            value: serverCreated.join(' ')
           },
           {
             name: 'Tên server: ',
