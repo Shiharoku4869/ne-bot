@@ -58,6 +58,7 @@ module.exports = {
           value: `${user.presence.status}`,
         }
       ],
+      timestamp: new Date(), 
       footer: {
         text: 'Nezuko',
         icon_url: 'https://imgur.com/2sGciTK.jpg',
