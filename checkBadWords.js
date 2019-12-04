@@ -1,4 +1,4 @@
-let bws =  ['vl', 'vcl', 'wtf', 'dm', 'đcm', 'dcm', 'đm', 'cmm', 'cmn', 'fuck', 'diss', 'cc', 'lồn.', 'lồn ', 'buồi', 'cặc', 'quay tay', 'làm tình', 'sex', 'hentai', 'bú'];
+let {bws} = require('./badwords.json');
 
 const fs = require('fs');
 
