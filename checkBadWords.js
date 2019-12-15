@@ -34,8 +34,10 @@ module.exports = {
 
   check: s => {
     for (let w of bws) {
-      if (s.toLowerCase().includes(w))
+      let re = new RegExp(`([^a-zắằẳẵặăấầẩẫậâáàãảạđếềểễệêéèẻẽẹíìỉĩịốồổỗộôớờởỡợơóòõỏọứừửữựưúùủũụýỳỷỹỵ]|^)${w}([^a-zắằẳẵặăấầẩẫậâáàãảạđếềểễệêéèẻẽẹíìỉĩịốồổỗộôớờởỡợơóòõỏọứừửữựưúùủũụýỳỷỹỵ]|^)`, 'gi');
+      if (re.test(s)) {
         return true;
+      }
     }
     return false;
   }
