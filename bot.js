@@ -30,8 +30,8 @@ bot.on('message', async meg => {
     verify(meg);
 });
 
-bot.on('message', async meg => {
-  if (meg.channel.name !== 'polls') return;
+bot.on('message', meg => {
+  if (meg.channel.name !== 'polls' || meg.author.bot) return;
   meg.react('⬆️');
   meg.react('⬇️');
 });
