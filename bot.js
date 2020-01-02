@@ -30,6 +30,11 @@ bot.on('message', async meg => {
     verify(meg);
 });
 
+bot.on('message', async meg => {
+  if (meg.channel.name !== 'polls') return;
+  meg.react('⬆️');
+  meg.react('⬇️');
+});
 
 bot.on('message', async meg => {
 
