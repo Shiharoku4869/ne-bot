@@ -10,7 +10,12 @@ module.exports = {
     if (!args.length)
       return meg.reply('Kêu người ta nói mà không nói gì, ghét. <:nezuko:630439565370327050>');
     
-    meg.channel.send(args.join(' '));
+    meg.channel.startTyping(1);
+    setTimeout((meg) => {
+      meg.channel.stopTyping(true);
+      meg.channel.send(args.join(' '));
+    }, 800, meg);
+    // meg.channel.send(args.join(' '));
 
   }
 }
