@@ -19,7 +19,7 @@ cmdFiles.forEach(f => {
 
 bot.on('ready', async () => {
   console.log(`${bot.user.username} is online`);
-  bot.user.setGame('with Tanjiro nichan');
+  bot.user.setActivity('with Tanjiro nichan');
 });
 
 
