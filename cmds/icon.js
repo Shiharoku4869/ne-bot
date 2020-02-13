@@ -1,7 +1,7 @@
 module.exports = {
   name: 'icon',
   description: 'Hiển thị toàn bộ icon của server',
-  usage: 'nicons[i].icon',
+  usage: 'ne.icon',
 
   run: (meg, args) => {
     let icons = [];
